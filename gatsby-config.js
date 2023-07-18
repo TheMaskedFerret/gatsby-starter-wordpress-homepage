@@ -6,7 +6,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://gatsbywordpresshomepage.gatsbyjs.io/",
+    siteUrl: "https://gbdev.tmf.space/",
     title: "Gatsby WordPress Homepage Starter",
     author: `Gatsby`,
     description: "A Gatsby Starter for building homepages with WordPress",
@@ -15,7 +15,7 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: process.env.WPGRAPHQL_URL,
+        url: process.env.WPGRAPHQL_URL || `https://tmf.space/graphql`,
       },
     },
     "gatsby-plugin-sharp",
